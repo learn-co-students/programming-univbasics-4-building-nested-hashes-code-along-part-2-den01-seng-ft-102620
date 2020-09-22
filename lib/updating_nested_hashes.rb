@@ -1,3 +1,4 @@
+
 def update_status
    epic_tragedy = {
       :montague => {
@@ -17,12 +18,14 @@ def update_status
          {name: "Steven", age: "30", attitude: "confused"},
          {name: "Nurse", age: "44", attitude: "worried"}
          ]
-      }
+      },
+      
    }
 
   # Write code that changes the status of both Romeo and Juliet from "alive" to "dead"
   # Code your solution here:
-
+epic_tragedy[:montague][:hero][:status] = "dead"
+  epic_tragedy[:capulet][:heroine][:status] = "dead"
 
 
 
@@ -47,10 +50,14 @@ def add_characters
          :heroine => {name: "Juliet", age: "15", status: "alive"},
          :heroine_friends => [
          {name: "Steven", age: "30", attitude: "confused"},
-         {name: "Nurse", age: "44", attitude: "worried"}
+         S
          ]
       }
    }
+   epic_tragedy[:additional_characters] = [
+  { name: "Prince Escalus" },
+  { name: "Apothecary" }
+  ]
 
    # Write code below that does the following programmatically:
    #
